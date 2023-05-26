@@ -1,0 +1,41 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.DemoApplication" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/yellow</item>
+        <item name="colorSecondaryVariant">@color/yellow</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="RatingBar" parent="Theme.AppCompat">
+        <item name="colorControlNormal">@color/gray</item>
+        <item name="colorControlActivated">@color/dark_yellow</item>
+    </style>
+    <style name="EdittextStyle" parent="ThemeOverlay.Material3.TextInputEditText">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">15sp</item>
+        <item name="background">@null</item>
+        <item name="android:textCursorDrawable">@drawable/cursor_drawable</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceMediumInverse</item>
+        <item name="colorControlNormal">@color/yellow</item>
+        <item name="colorControlActivated">@color/yellow</item>
+        <item name="colorControlHighlight">@color/yellow</item>
+
+    </style>
+
+    <style name="textInputLayout" parent="Widget.Design.TextInputLayout">
+        <item name="android:textColor">@color/yellow</item>
+        <item name="colorControlNormal">@color/yellow</item>
+        <item name="colorControlActivated">@color/yellow</item>
+        <item name="colorControlHighlight">@color/yellow</item>
+
+    </style>
+
+</resources>

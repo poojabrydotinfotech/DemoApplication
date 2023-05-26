@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/frameLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/fragment_container_view"
+            android:name="androidx.navigation.fragment.NavHostFragment"
+            app:navGraph="@navigation/navigation"
+            app:defaultNavHost="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </FrameLayout>

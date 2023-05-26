@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">DemoApplication</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="discripation">We Will serve you better when you \n have an account Fill below details to\n get started.</string>
+    <string name="title">"Nearby Parking"</string>
+    <string name="dis">18 parking is near to you</string>
+    <string name="first_name">First name</string>
+    <string name="email">Email</string>
+    <string name="last_name">Last name</string>
+    <string name="country_code">Country Code</string>
+    <string name="map">Map</string>
+    <string name="map_key">AIzaSyBuS1AxnhPR642rJ16BOktrVG2hIXdsYBo</string>
+
+    <string-array name="country">
+        <item>1</item>
+        <item>+91</item>
+        <item>61</item>
+        <item>60</item>
+        <item>+21</item>
+    </string-array>
+</resources>
