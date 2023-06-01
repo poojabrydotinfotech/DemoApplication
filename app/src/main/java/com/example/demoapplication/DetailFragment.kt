@@ -11,7 +11,11 @@ import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.example.demoapplication.adepter.DetailAdepter
 import com.example.demoapplication.model.DetailModel
-import kotlinx.android.synthetic.main.fragment_ditail.*
+import kotlinx.android.synthetic.main.fragment_ditail.imgBack
+import kotlinx.android.synthetic.main.fragment_ditail.ly_map
+import kotlinx.android.synthetic.main.fragment_ditail.recyclerView
+import kotlinx.android.synthetic.main.fragment_ditail.txt_fromDate
+import kotlinx.android.synthetic.main.fragment_ditail.txt_todate
 import java.text.SimpleDateFormat
 import java.util.*
 
@@ -66,7 +70,9 @@ class DetailFragment : Fragment() {
             )
         )
 
-        recyclerView.adapter = DetailAdepter(detailList)
+        recyclerView.adapter = DetailAdepter(detailList,{
+
+        })
         emptyStartDate()
     }
     private fun addFromDate(){

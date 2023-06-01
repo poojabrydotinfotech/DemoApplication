@@ -23,6 +23,7 @@ class SplashFragment : Fragment() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         Handler(Looper.getMainLooper()).postDelayed({
+
             findNavController().navigate(SplashFragmentDirections.actionSplashFragmentToLoginFragment())
         }, 3000)
     }

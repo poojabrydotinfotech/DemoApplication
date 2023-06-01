@@ -11,6 +11,7 @@
     <string name="country_code">Country Code</string>
     <string name="map">Map</string>
     <string name="map_key">AIzaSyBuS1AxnhPR642rJ16BOktrVG2hIXdsYBo</string>
+    <string name="camera_error">This device doesn\'t support Camera2 API.</string>
 
     <string-array name="country">
         <item>1</item>

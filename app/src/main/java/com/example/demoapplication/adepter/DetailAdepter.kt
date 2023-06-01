@@ -14,9 +14,10 @@ import com.bumptech.glide.load.resource.bitmap.GranularRoundedCorners
 import com.bumptech.glide.request.target.Target
 import com.example.demoapplication.R
 import com.example.demoapplication.model.DetailModel
+import kotlinx.android.synthetic.main.row_parking_detail.view.price
 
 
-class DetailAdepter (var detailList:ArrayList<DetailModel>):RecyclerView.Adapter<DetailAdepter.ViewHolder> (){
+class DetailAdepter (var detailList:ArrayList<DetailModel>,val onclick:(DetailModel)->Unit):RecyclerView.Adapter<DetailAdepter.ViewHolder> (){
     inner class ViewHolder(ItemView: View) : RecyclerView.ViewHolder(ItemView) {
         val img:ImageView = itemView.findViewById(R.id.img)
         val title:TextView = itemView.findViewById(R.id.txt_title)
@@ -32,6 +33,8 @@ class DetailAdepter (var detailList:ArrayList<DetailModel>):RecyclerView.Adapter
             dis.text = model.addressDetail
             btn.text = model.price
         }
+
+
     }
    /* fun ImageView.loadImageWithCustomCorners(@DrawableRes resId:Int ,radius:Int)=
         Glide.with(this)
@@ -51,6 +54,9 @@ class DetailAdepter (var detailList:ArrayList<DetailModel>):RecyclerView.Adapter
 
     override fun onBindViewHolder(holder:ViewHolder, position: Int) {
         holder.onBind(detailList[position])
+        holder.itemView.price.setOnClickListener {
+            onclick(detailList[position])
+        }
     }
 
 }
