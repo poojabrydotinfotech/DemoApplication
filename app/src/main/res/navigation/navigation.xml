@@ -10,6 +10,9 @@
         android:name="com.example.demoapplication.DetailFragment"
         android:label="fragment_ditail"
         tools:layout="@layout/fragment_ditail" >
+        <action
+            android:id="@+id/action_detailFragment_to_helpFragment"
+            app:destination="@id/helpFragment" />
     </fragment>
     <fragment
         android:id="@+id/loginFragment"

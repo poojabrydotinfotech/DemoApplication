@@ -71,7 +71,7 @@ class DetailFragment : Fragment() {
         )
 
         recyclerView.adapter = DetailAdepter(detailList,{
-
+            findNavController().navigate(DetailFragmentDirections.actionDetailFragmentToHelpFragment())
         })
         emptyStartDate()
     }

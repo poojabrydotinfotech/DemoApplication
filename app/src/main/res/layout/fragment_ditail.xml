@@ -142,17 +142,20 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 
+
+
 <androidx.recyclerview.widget.RecyclerView
     android:id="@+id/recyclerView"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    app:layout_constrainedWidth="true"
-    android:layout_marginTop="20dp"
-    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+    android:layout_height="400dp"
+    app:layoutManager="com.google.android.material.carousel.CarouselLayoutManager"
     tools:listitem="@layout/row_parking_detail"
+    app:layout_constrainedWidth="true"
     app:layout_constraintEnd_toEndOf="@id/txt_title"
     app:layout_constraintStart_toStartOf="@id/txt_title"
-    app:layout_constraintTop_toBottomOf="@id/txt_dis"/>
+    app:layout_constraintTop_toBottomOf="@id/txt_dis"
+  />
+
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/ly_map"
