@@ -4,7 +4,8 @@ plugins {
     id 'kotlin-android'
     id 'kotlin-android-extensions'
     id "androidx.navigation.safeargs.kotlin"
-    id 'com.google.android.libraries.mapsplatform.secrets-gradle-plugin'
+    id 'com.google.gms.google-services'
+
 
 }
 
@@ -60,7 +61,7 @@ dependencies {
     implementation 'com.github.bumptech.glide:glide:4.15.1'
     implementation 'androidx.navigation:navigation-fragment-ktx:2.5.3'
     implementation 'androidx.navigation:navigation-ui-ktx:2.5.3'
-    implementation 'com.google.android.gms:play-services-maps:18.1.0'
+    //implementation 'com.google.android.gms:play-services-map:21.0.1'
 
 
     /*roomDatabase */
@@ -76,6 +77,14 @@ dependencies {
     implementation 'com.google.mlkit:face-detection:16.1.5'
 
     implementation 'org.tensorflow:tensorflow-lite:2.12.0'
+
+
+    implementation 'com.google.firebase:firebase-messaging:20.0.0'
+
+    implementation platform('com.google.firebase:firebase-bom:30.3.1')
+    //implementation 'com.google.firebase:firebase-crashlytics-ktx:1.7.0'
+    implementation 'com.google.firebase:firebase-analytics-ktx:1.7.0'
+
 
 
 }
