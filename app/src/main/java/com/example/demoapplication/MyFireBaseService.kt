@@ -61,6 +61,7 @@ class MyFireBaseService : FirebaseMessagingService() {
     }
 
     override fun onNewToken(token: String) {
+        Log.e(javaClass.simpleName, "onNewToken: $token")
         super.onNewToken(token)
     }
 }
