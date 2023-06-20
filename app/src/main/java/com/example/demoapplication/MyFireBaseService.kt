@@ -13,7 +13,7 @@ import com.google.firebase.messaging.RemoteMessage
 
 
 class MyFireBaseService : FirebaseMessagingService() {
-    val TAG = "FirebaseMessagingService"
+    private val TAG = "FirebaseMessagingService"
     val NOTIFICATION_CHANNEL_ID = "10001"
 
 
